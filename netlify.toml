@@ -1,0 +1,7 @@
+[build]
+  command = "pnpm --filter @workspace/mockup-sandbox... install --frozen-lockfile --prod=false && pnpm --filter @workspace/mockup-sandbox... run build"
+  publish = "artifacts/mockup-sandbox/dist"
+
+[build.environment]
+  PORT = "3000"
+  BASE_PATH = "/"
